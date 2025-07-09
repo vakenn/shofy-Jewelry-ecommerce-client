@@ -19,7 +19,7 @@ const FooterTwo = () => {
                   <div className="tp-footer-widget footer-col-4-1 mb-50">
                     <div className="tp-footer-logo">
                       <Link href="/">
-                        <Image src={logo} alt="logo" />
+                        <Image src={logo} alt="logo" style={{ maxWidth: '120px', height: 'auto' }} />
                       </Link>
                     </div>
                     <div className="tp-footer-widget-content">

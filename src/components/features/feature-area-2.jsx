@@ -1,26 +1,27 @@
 import React from 'react';
 import { Delivery, Discount, Refund, Support } from '@/svg';
 
+
 export const feature_data = [
   {
     icon: <Delivery />,
-    title: 'Free Delivery',
-    subtitle: 'Orders from all item'
+    title: 'Fabrication Locale',
+    subtitle: 'Production 100% tunisienne'
   },
   {
     icon: <Refund />,
-    title: 'Return & Refund',
-    subtitle: 'Money back guarantee'
+    title: 'Stock Disponible',
+    subtitle: 'Produits toujours en stock'
   },
   {
     icon: <Discount />,
-    title: 'Member Discount',
-    subtitle: 'Onevery order over $140.00'
+    title: 'Offres Sur Mesure',
+    subtitle: 'Devis adaptés à vos besoins'
   },
   {
     icon: <Support />,
-    title: 'Support 24/7',
-    subtitle: 'Contact us 24 hours a day'
+    title: 'Support Technique',
+    subtitle: 'Assistance rapide et dédiée'
   },
 ]
 

@@ -10,7 +10,7 @@ const SearchBar = ({ isSearchOpen, setIsSearchOpen }) => {
     setCategory(value);
   };
 
-  const categories = ["electronics", "fashion", "beauty", "jewelry"];
+  const categories = ["Bandes Plâtrées", "Bandes Jersey", "Compresses N.S", "Cotton Soft"];
   return (
     <>
       <section

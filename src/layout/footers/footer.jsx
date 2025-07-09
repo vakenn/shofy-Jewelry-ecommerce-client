@@ -20,10 +20,10 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <div className="tp-footer-widget-content">
                     <div className="tp-footer-logo">
                       <Link href="/">
-                        <Image src={logo} alt="logo" />
+                        <Image src={logo} alt="logo" style={{ maxWidth: '120px', height: 'auto' }} />
                       </Link>
                     </div>
-                    <p className="tp-footer-desc">We are a dynamic team of full stack developers and designers crafting high-quality web applications</p>
+                    <p className="tp-footer-desc">Trusted provider of certified medical supplies across Tunisia and North Africa for over 20 years.</p>
                     <div className="tp-footer-social">
                       {social_data.map(s => <a href={s.link} key={s.id} target="_blank">
                         <i className={s.icon}></i>
@@ -69,7 +69,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <div className="tp-footer-widget-content">
                     <div className="tp-footer-talk mb-20">
                       <span>Got Questions? Call us</span>
-                      <h4><a href="tel:670-413-90-762">+966 595 035 008</a></h4>
+                      <h4><a href="tel:71-123-456">+216 71 123 456</a></h4>
                     </div>
                     <div className="tp-footer-contact">
                       <div className="tp-footer-contact-item d-flex align-items-start">
@@ -79,7 +79,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                           </span>
                         </div>
                         <div className="tp-footer-contact-content">
-                          <p><a href="mailto:shofy@support.com">swe.hamedhasan@gmail.com</a></p>
+                          <p><a href="mailto:contact@medicast.tn">contact@medicast.tn</a></p>
                         </div>
                       </div>
                       <div className="tp-footer-contact-item d-flex align-items-start">
@@ -89,7 +89,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                           </span>
                         </div>
                         <div className="tp-footer-contact-content">
-                          <p><a href="https://www.google.com/maps/place/Sleepy+Hollow+Rd,+Gouverneur,+NY+13642,+USA/@44.3304966,-75.4552367,17z/data=!3m1!4b1!4m6!3m5!1s0x4cccddac8972c5eb:0x56286024afff537a!8m2!3d44.3304928!4d-75.453048!16s%2Fg%2F1tdsjdj4" target="_blank">79 Sleepy Hollow St. <br /> Jamaica, Jeddah 1432</a></p>
+                          <p><a href="https://www.google.com/maps?q=36.857917,10.207750&hl=fr&z=15" target="_blank">ZI Sidi Rézig, <br /> Ben Arous, Tunisie</a></p> 
                         </div>
                       </div>
                     </div>
@@ -105,15 +105,8 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
               <div className="row align-items-center">
                 <div className="col-md-6">
                   <div className="tp-footer-copyright">
-                    <p>© {new Date().getFullYear()} All Rights Reserved  |  Next js Template by
+                    <p>© {new Date().getFullYear()} MEDICAST. All rights reserved. 
                       <Link href="/">{" "}❤</Link>.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="tp-footer-payment text-md-end">
-                    <p>
-                      <Image src={pay} alt="pay" />
                     </p>
                   </div>
                 </div>

@@ -62,43 +62,7 @@ const Menus = () => {
   return (
     <ul>
       {menu_data.map((menu) =>
-        menu.homes ? (
-          <li key={menu.id} className="has-dropdown has-mega-menu">
-            <Link href={menu.link}>{menu.title}</Link>
-            <div className="home-menu tp-submenu tp-mega-menu">
-            <div className="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gx-2 gy-2 gy-lg-0">
-            {instagram_data.map((item, i) => (
-              <div className="col" key={i}>
-                <div className="tp-instagram-item-2 w-img">
-                  <Image src={item.img} alt="instagram img" style={{ width: '100%', height: '100%' }} />
-                  <div className="tp-instagram-icon-2">
-                    <a href={item.link} target="_blank" className="popup-image">
-                      <i className="fa-brands fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-              <div className="row row-cols-1 row-cols-lg-4 row-cols-xl-4">
-                {menu.home_pages.map((home, i) => (
-                  <div key={i} className="col">
-                    <div className="home-menu-item">
-                      {/* <Link href={home.link}>
-                        <div className="home-menu-thumb p-relative fix">
-                          <Image src={home.img} alt="home img" />
-                        </div>
-                        <div className="home-menu-content">
-                          <h5 className="home-menu-title">{home.title}</h5>
-                        </div>
-                      </Link> */}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </li>
-        ) : menu.products ? (
+        menu.products ? (
           <li key={menu.id} className="has-dropdown has-mega-menu ">
             <Link href={menu.link}>{menu.title}</Link>
             <ul className="tp-submenu tp-mega-menu mega-menu-style-2">
