@@ -3,14 +3,13 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 // internal
 import CheckoutBillingArea from "./checkout-billing-area";
-import CheckoutCoupon from "./checkout-coupon";
 import CheckoutLogin from "./checkout-login";
 import CheckoutOrderArea from "./checkout-order-area";
 import useCheckoutSubmit from "@/hooks/use-checkout-submit";
 
 const CheckoutArea = () => {
   const checkoutData = useCheckoutSubmit();
-  const {handleSubmit,submitHandler,register,errors,handleCouponCode,couponRef,couponApplyMsg} = checkoutData;
+  const {handleSubmit,submitHandler,register,errors} = checkoutData;
   const { cart_products } = useSelector((state) => state.cart);
   return (
     <>
@@ -32,11 +31,6 @@ const CheckoutArea = () => {
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-checkout-verify">
                   <CheckoutLogin />
-                  <CheckoutCoupon
-                    handleCouponCode={handleCouponCode}
-                    couponRef={couponRef}
-                    couponApplyMsg={couponApplyMsg}
-                  />
                 </div>
               </div>
               <form onSubmit={handleSubmit(submitHandler)}>

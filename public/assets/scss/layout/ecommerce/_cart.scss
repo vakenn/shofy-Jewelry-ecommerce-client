@@ -108,44 +108,6 @@
     &-quantity{
         width: 180px;
     }
-    &-coupon{
-        @media #{$sm, $xs}{
-            margin-bottom: 20px;
-        }
-        &-input{
-            &-box{
-                & label{
-                    font-size: 14px;
-                    color: var(--tp-common-black);
-                    margin-bottom: 7px;
-                }
-            }
-            & input{
-                background: #FFFFFF;
-                border: 1px solid #D6D9DC;
-                height: 46px;
-                line-height: 46px;
-                margin-right: 4px;
-                max-width: 282px;
-                @include tp-placeholder{
-                    color: #818487;
-                }
-            }
-
-            & button{
-                font-weight: 500;
-                font-size: 16px;
-                color: var(--tp-common-white);
-                background-color: var(--tp-common-black);
-                padding: 10px 30px;
-
-                &:hover{
-                    color: var(--tp-common-white);
-                    background-color: var(--tp-theme-primary);
-                }
-            }
-        }
-    }
     &-update{
        
         &-btn{

@@ -2,7 +2,6 @@ import React from "react";
 import menu_data from "@/data/menu-data";
 import Link from "next/link";
 import Image from "next/image";
-import OfferCouponArea from "@/components/offerHeader/OfferCouponArea";
 import { useGetProductTypeQuery } from "@/redux/features/productApi";
 import { HomeNewArrivalPrdLoader } from "@/components/loader";
 import ErrorMsg from "@/components/common/error-msg";
@@ -81,7 +80,6 @@ const Menus = () => {
               </div>
             ))}
           </div>
-                {/* <OfferCouponArea/> */}
               <div className="row row-cols-1 row-cols-lg-4 row-cols-xl-4">
                 {menu.home_pages.map((home, i) => (
                   <div key={i} className="col">

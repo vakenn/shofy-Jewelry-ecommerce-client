@@ -6,7 +6,6 @@ import compareSlice from "./features/compareSlice";
 import productModalSlice from "./features/productModalSlice";
 import shopFilterSlice from "./features/shop-filter-slice";
 import wishlistSlice from "./features/wishlist-slice";
-import couponSlice from "./features/coupon/couponSlice";
 import orderSlice from "./features/order/orderSlice";
 
 const store = configureStore({
@@ -18,7 +17,6 @@ const store = configureStore({
     cart:cartSlice,
     wishlist:wishlistSlice,
     compare:compareSlice,
-    coupon:couponSlice,
     order:orderSlice,
   },
   middleware: (getDefaultMiddleware) =>
